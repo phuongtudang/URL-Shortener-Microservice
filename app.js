@@ -12,7 +12,7 @@ var Url = mongoose.model("Url", urlSchema);
 
 app.set("view engine", "ejs");
 
-mongoose.connect("mongodb://localhost/url-shortener", function (err, db) {
+mongoose.connect("mongodb://phuong:phuong@ds145220.mlab.com:45220/url-shortener-microservice", function (err, db) {
     if (err) {
         console.log("Unable to connect to server", err);
     } else {
